@@ -1,0 +1,58 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!-- Main content -->
+  <main style="background-color: black;">
+    <div class="jumbotron" style="text-align: center; height: 200px; background-color: #eb6c5f;">
+      <div class="container">
+      <% if (title == "Home")
+      { %>
+      <h6 class="display-4"><b>Welcome to the <%= title %> page</b></h6>
+      <a class="nav-link" href="/about" style="text-decoration-color: black;">More information About me.</a>
+      <% } 
+      else { %>
+      <h6 class="display-4"><b><%= title %></b></h6>
+      <%} %>
+      </div>
+    </div>
+  
+    <% if (title == "Home")
+    { %>
+      <% include partials/main_page.ejs %>
+    <% }
+    
+    else if (title == "About Me") {%>
+      <% include partials/aboutme_page.ejs %>
+    <% }
+
+    else if (title == "Projects") {%>
+      <% include partials/projects_page.ejs %>
+    <% }
+
+    else if (title == "Services") {%>
+      <% include partials/services_page.ejs %>
+    <% }
+
+    else if (title == "Contact") {%>
+      <% include partials/contact_page.ejs %>
+    <% } %>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
