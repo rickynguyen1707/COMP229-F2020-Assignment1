@@ -1,3 +1,4 @@
+// COMP229-F2020-Assignment1, Nguyen Khang Nguyen, 301098234, 10/09/2020
 // installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');

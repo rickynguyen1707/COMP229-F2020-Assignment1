@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+// COMP229-F2020-Assignment1, Nguyen Khang Nguyen, 301098234, 10/09/2020
 /**
  * Module dependencies.
  */
